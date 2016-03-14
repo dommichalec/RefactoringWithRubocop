@@ -6,10 +6,10 @@ class GemCity
   # This class represents the town of GemCity
   # This is a town riddled with crime but we can find out how happy the town is
 
-  def initialize
-    @thieves = 5
-    @officers = 1
-    @population = 50
+  def initialize(thieves = 5, officers = 1, population = 50)
+    @thieves = thieves
+    @officers = officers
+    @population = population
     @civilians = @population - @thieves - @officers
   end
 
